@@ -2,11 +2,9 @@ create database Project;
 use project;
 select * from finance1;
 select * from finance2;
-#truncate finance2;
 desc finance1;
 desc finance2;
 select * from finance2;
-alter table finance2 rename column ï»¿id to id;
 
 ## KPI-1 
 # Year-wise loan amount Stats
