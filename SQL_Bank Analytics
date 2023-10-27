@@ -9,13 +9,13 @@ select * from finance2;
 alter table finance2 rename column ï»¿id to id;
 
 ## KPI-1 
-# Year wise loan amount Stats
+# Year-wise loan amount Stats
 
 select year(issue_d),sum(loan_amnt) from finance1
 group by year(issue_d);
 
 ## KPI-2
-# Grade and sub grade wise revol_bal
+# Grade and subgrade wise revol_bal
 
 select finance1.grade, finance1.sub_grade,sum(finance2.revol_bal) Total 
 from finance1 join finance2
