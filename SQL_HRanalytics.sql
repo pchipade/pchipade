@@ -39,12 +39,6 @@ GROUP BY JobRole;
 select YearsSinceLastPromotion , count(AttritionCount) AttritionCount
 from hrdata 
 group by Yearssincelastpromotion order by AttritionCount desc;
-
-
-
-
-
- 
  
 
 
